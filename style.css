@@ -1,0 +1,1282 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body,
+html {
+  overflow-x: hidden;
+}
+.header {
+  background-color: #0c4fa1;
+  height: 4.7em;
+  width: 100%;
+  color: rgb(101, 101, 226);
+  /* box-shadow: 10px 10px 10px 10px rgb(115, 115, 115); */
+}
+.logo {
+  height: 4em;
+  width: 5em;
+  margin-left: 11em;
+  margin-top: 0.3em;
+}
+.travel {
+  background-color: #0c4fa1;
+  border: none;
+  color: white;
+  font-size: 0.9em;
+  margin-top: 2em;
+  margin-left: 2.2em;
+  position: absolute;
+  font-weight: 500;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, sans-serif;
+}
+.travel:hover {
+  color: rgb(222, 222, 222);
+  cursor: pointer;
+}
+option {
+  color: black;
+  background-color: white;
+  padding: 1em;
+  margin-top: 1em;
+}
+.travel:active {
+  width: 30em;
+  margin-top: 2px;
+}
+.get-app {
+  position: absolute;
+  margin-top: 2em;
+  background-color: white;
+  margin-left: 43.2em;
+  border-radius: 15px;
+  width: 8em;
+  height: 2.2em;
+  font-size: 0.85em;
+  font-family: serif;
+  border: none;
+}
+.get-app:hover {
+  cursor: pointer;
+  background-color: rgb(247, 243, 243);
+}
+.download {
+  position: absolute;
+  margin-top: 2.2em;
+  margin-left: 37.2em;
+  width: 15px;
+  height: 15px;
+  z-index: 1;
+}
+.anchor-tags {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  margin-top: -2.7em;
+  margin-left: 61em;
+  gap: 2em;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, sans-serif;
+}
+.Property:hover {
+  color: rgb(222, 222, 222);
+  cursor: pointer;
+}
+.Support:hover {
+  color: rgb(222, 222, 222);
+  cursor: pointer;
+}
+.Trips:hover {
+  color: rgb(222, 222, 222);
+  cursor: pointer;
+}
+.Sign:hover {
+  color: rgb(222, 222, 222);
+  cursor: pointer;
+}
+.book_stay {
+  width: 80%;
+  height: 12em;
+  border: 0.7px solid #c8c8c8;
+  margin-left: 10em;
+  margin-top: 3em;
+  border-radius: 12px;
+}
+.btn-svg {
+  position: fixed;
+  width: 2em;
+  height: 2em;
+}
+.help-btn {
+  position: fixed;
+  border-radius: 20px;
+  width: 5em;
+  height: 2.2em;
+  font-size: 1em;
+  margin-left: 86em;
+  margin-top: 23em;
+  color: #004fb0;
+  background-color: rgb(255, 255, 255);
+  box-shadow: 0px 0px 2px 0 rgb(115, 115, 115);
+  border: none;
+  z-index: 1;
+}
+.help-btn:hover {
+  cursor: pointer;
+  background-color: rgb(13, 90, 185);
+  color: white;
+}
+.book-hr {
+  width: 100%;
+  margin-top: 2.6em;
+}
+.book-tags {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 0.8em;
+  margin-left: 25%;
+  gap: 2em;
+  font-weight: 200;
+}
+.stays {
+  color: #004fb0;
+  border-bottom: 1px solid #004fb0;
+  font-family: serif;
+  font-weight: 500;
+}
+.book-tags a:hover {
+  cursor: pointer;
+  text-decoration: underline;
+  transform: translateY(-1em);
+}
+.location {
+  width: 20em;
+  height: 3em;
+  margin-top: 2em;
+  margin-left: 2em;
+  border: 1px solid rgb(92, 90, 90);
+  border-radius: 7px;
+}
+.location p {
+  color: rgb(33, 33, 33);
+  margin-left: 1.7em;
+  margin-top: 0.8em;
+}
+#locate-icon {
+  margin-left: -1em;
+}
+.location:hover {
+  cursor: pointer;
+}
+.date {
+  width: 20em;
+  height: 3em;
+  margin-top: -3em;
+  margin-left: 23em;
+  border: 1px solid rgb(92, 90, 90);
+  border-radius: 7px;
+}
+.date:hover {
+  cursor: pointer;
+}
+#calender-icon {
+  position: absolute;
+  margin-left: 10px;
+  margin-top: -5px;
+}
+.date .p1 {
+  color: rgb(115, 115, 115);
+  margin-left: 2.4em;
+  margin-top: 0.2em;
+  font-size: 0.9em;
+}
+.date .p2 {
+  color: rgb(54, 53, 53);
+  margin-left: 2.2em;
+  margin-top: 0.2em;
+}
+.place {
+  width: 20em;
+  height: 3em;
+  margin-top: -3em;
+  margin-left: 44em;
+  border: 1px solid rgb(92, 90, 90);
+  border-radius: 7px;
+}
+.place:hover {
+  cursor: pointer;
+}
+.place .p1 {
+  color: rgb(115, 115, 115);
+  margin-left: 2.3em;
+  margin-top: 0.2em;
+  font-size: 0.9em;
+}
+.place .p2 {
+  color: rgb(48, 47, 47);
+  margin-left: 2.1em;
+  margin-top: 0.2em;
+}
+#place-icon {
+  position: absolute;
+  margin-left: 10px;
+  margin-top: -5px;
+}
+.search {
+  position: absolute;
+  border-radius: 22px;
+  width: 5.7em;
+  height: 3em;
+  font-size: 1em;
+  margin-left: 65em;
+  margin-top: -3em;
+  background-color: #0c4a97;
+  color: white;
+  border: none;
+}
+.search:hover {
+  background-color: #0c4fa0;
+  cursor: pointer;
+}
+.flight-box {
+  position: absolute;
+  margin-top: -1.3em;
+  margin-left: 4.2em;
+  font-size: 1em;
+  color: rgb(70, 68, 68);
+}
+.flight-box:hover {
+  cursor: pointer;
+}
+.check1 {
+  width: 1.2em;
+  height: 1.2em;
+  accent-color: rgb(65, 65, 200);
+  border-radius: 6px;
+  margin-top: 1.5em;
+  margin-left: 3em;
+}
+.car-box {
+  position: absolute;
+  margin-top: -1.2em;
+  margin-left: 12.3em;
+  font-size: 1em;
+  color: rgb(70, 68, 68);
+}
+.car-box:hover {
+  cursor: pointer;
+}
+.check2 {
+  position: absolute;
+  margin-top: 1.6em;
+  margin-left: 8.4em;
+  width: 1.2em;
+  height: 1.2em;
+  accent-color: rgb(65, 65, 200);
+}
+input[type="checkbox"]:hover {
+  cursor: pointer;
+  border: 2px solid blue;
+}
+.destiny-explore {
+  position: absolute;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, sans-serif;
+  font-weight: 400;
+  /* letter-spacing: 1px; */
+  font-size: 1.8em;
+  margin-left: 5.5em;
+  margin-top: 1.3em;
+}
+.destiny-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 14em;
+  width: 85%;
+  margin-top: 5em;
+  margin-left: 10em;
+  /* border: 2px solid red; */
+}
+.destiny1 {
+  position: absolute;
+  width: 17em;
+  height: 12em;
+  border: 1px solid gray;
+  border-radius: 12px;
+  margin-top: 0em;
+  margin-left: 0em;
+  /* border: none; */
+}
+.destiny1:hover {
+  cursor: pointer;
+}
+.destiny-images {
+  width: 100%;
+  height: 70%;
+  /* overflow: hidden; */
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  margin-top: 0em;
+}
+.destiny1 span {
+  position: absolute;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, sans-serif;
+  font-weight: 500;
+  width: 10em;
+  height: 1em;
+  margin-top: 8.9em;
+  margin-left: -16em;
+}
+.destiny1 p {
+  position: absolute;
+  font-size: 0.9em;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, sans-serif;
+  font-weight: lighter;
+  height: 1em;
+  margin-top: 1.9em;
+  margin-left: 1em;
+}
+.destiny2 {
+  position: absolute;
+  width: 17em;
+  height: 12em;
+  border: 1px solid gray;
+  border-radius: 12px;
+  /* margin-top: 5.7em; */
+  margin-left: 18.6em;
+  /* border: none; */
+}
+.destiny2:hover {
+  cursor: pointer;
+}
+.destiny2 span {
+  position: absolute;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, sans-serif;
+  font-weight: 500;
+  width: 10em;
+  height: 1em;
+  margin-top: 8.9em;
+  margin-left: -16em;
+}
+.destiny2 p {
+  position: absolute;
+  font-size: 0.9em;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, sans-serif;
+  font-weight: lighter;
+  height: 1em;
+  margin-top: 1.9em;
+  margin-left: 1em;
+}
+.destiny3 {
+  position: absolute;
+  width: 17em;
+  height: 12em;
+  border: 1px solid gray;
+  border-radius: 12px;
+  /* margin-top: 5.7em; */
+  margin-left: 37.3em;
+  /* border: none; */
+}
+.destiny3:hover {
+  cursor: pointer;
+}
+.destiny3 span {
+  position: absolute;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, sans-serif;
+  font-weight: 500;
+  width: 10em;
+  height: 1em;
+  margin-top: 8.9em;
+  margin-left: -16em;
+}
+.destiny3 p {
+  position: absolute;
+  font-size: 0.9em;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, sans-serif;
+  font-weight: lighter;
+  height: 1em;
+  margin-top: 1.9em;
+  margin-left: 1em;
+}
+.destiny4 {
+  position: absolute;
+  width: 17em;
+  height: 12em;
+  border: 1px solid gray;
+  border-radius: 12px;
+  /* margin-top: 5.7em; */
+  margin-left: 56em;
+  /* border: none; */
+}
+.destiny4:hover {
+  cursor: pointer;
+}
+.destiny4 span {
+  position: absolute;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, sans-serif;
+  font-weight: 500;
+  width: 10em;
+  height: 1em;
+  margin-top: 8.9em;
+  margin-left: -16em;
+}
+.destiny4 p {
+  position: absolute;
+  font-size: 0.9em;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, sans-serif;
+  font-weight: lighter;
+  height: 1em;
+  margin-top: 1.9em;
+  margin-left: 1em;
+}
+.destiny5 {
+  position: absolute;
+  width: 17em;
+  height: 12em;
+  border: 1px solid gray;
+  border-radius: 12px;
+  margin-left: 74.5em;
+}
+.destiny5 span {
+  position: absolute;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, sans-serif;
+  font-weight: 500;
+  width: 5em;
+  height: 1em;
+  margin-top: 9em;
+  margin-left: -16em;
+  /* border: 2px solid red; */
+}
+.destiny5 p {
+  position: absolute;
+  font-size: 0.9em;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, sans-serif;
+  font-weight: lighter;
+  height: 1em;
+  margin-top: 1.9em;
+  margin-left: 1em;
+}
+.perfect-trip {
+  position: absolute;
+  width: 24em;
+  height: 12em;
+  border: 1px solid rgb(10, 6, 6);
+  border-radius: 12px;
+  margin-top: 1em;
+  margin-left: 9.7em;
+  border: none;
+}
+.perfect-trip:hover {
+  cursor: pointer;
+}
+.perfect-trip img {
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 75%;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+}
+.para-1 {
+  width: 27em;
+  font-size: 0.8em;
+  color: rgb(56, 55, 55);
+  margin-left: 1.2em;
+  margin-top: 0.7em;
+}
+.para-2 {
+  width: 27em;
+  font-size: 0.8em;
+  color: rgb(56, 55, 55);
+  margin-left: 1.2em;
+}
+.perfect-trip h3 {
+  position: absolute;
+  color: white;
+  margin-top: -1.8em;
+  font-family: serif;
+  font-size: 1.25em;
+  font-weight: 500;
+  margin-left: 1em;
+}
+.flexibility {
+  position: absolute;
+  width: 24em;
+  height: 12em;
+  border: 1px solid rgb(10, 6, 6);
+  border-radius: 12px;
+  margin-top: 1em;
+  margin-left: 35em;
+  border: none;
+}
+.flexibility:hover {
+  cursor: pointer;
+}
+.flexibility img {
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 75%;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+}
+.flexibility .para-1 {
+  width: 27em;
+  font-size: 0.8em;
+  color: rgb(56, 55, 55);
+  margin-left: 1.2em;
+  margin-top: 0.7em;
+}
+.flexibility .para-2 {
+  width: 27em;
+  font-size: 0.8em;
+  color: rgb(56, 55, 55);
+  margin-left: 1.2em;
+}
+.flexibility h3 {
+  position: absolute;
+  color: white;
+  margin-top: -1.8em;
+  font-family: serif;
+  font-size: 1.25em;
+  font-weight: 500;
+  margin-left: 1em;
+}
+.got-back {
+  position: absolute;
+  width: 24em;
+  height: 12em;
+  border: 1px solid rgb(10, 6, 6);
+  border-radius: 12px;
+  margin-top: 1em;
+  margin-left: 60em;
+  border: none;
+}
+.got-back:hover {
+  cursor: pointer;
+}
+.got-back img {
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 75%;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+}
+.got-back .para-1 {
+  width: 27em;
+  font-size: 0.8em;
+  color: rgb(56, 55, 55);
+  margin-left: 1.2em;
+  margin-top: 0.7em;
+}
+.got-back .para-2 {
+  width: 27em;
+  font-size: 0.8em;
+  color: rgb(56, 55, 55);
+  margin-left: 1.2em;
+}
+.got-back h3 {
+  position: absolute;
+  color: white;
+  margin-top: -1.8em;
+  font-family: serif;
+  font-size: 1.25em;
+  font-weight: 500;
+  margin-left: 1em;
+}
+.all-resorts {
+  position: absolute;
+  width: 35.4em;
+  height: 15em;
+  border-radius: 12px;
+  margin-top: 15em;
+  margin-left: 10.5em;
+  overlay: rgba(0, 0, 0, 0.4);
+}
+.all-resorts img {
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+  opacity: 1;
+  background-size: cover;
+  filter: brightness(50%);
+  border-radius: 12px;
+}
+.all-resorts h2 {
+  position: absolute;
+  color: rgb(251, 250, 250);
+  font-weight: 500;
+  width: 10em;
+  margin-top: -7em;
+  margin-left: 1em;
+  font-size: 2em;
+}
+.all-resorts .para-1 {
+  position: absolute;
+  font-size: 1.1em;
+  color: rgb(249, 248, 248);
+  margin-left: 1.8em;
+  margin-top: -10em;
+}
+.all-resorts .para-2 {
+  position: absolute;
+  font-size: 1.1em;
+  color: rgb(249, 247, 247);
+  margin-left: 1.8em;
+  margin-top: -8.9em;
+}
+.view-deals-1 {
+  position: absolute;
+  width: 8em;
+  height: 2.4em;
+  border-radius: 15px;
+  border: none;
+  background-color: rgb(255, 255, 255);
+  color: #004fb0;
+  font-size: 0.9em;
+  margin-top: 8.4em;
+  margin-left: -37.1em;
+}
+.view-deals-1:hover {
+  cursor: pointer;
+  background-color: rgba(220, 220, 220, 0.926);
+}
+.view-deals {
+  position: absolute;
+  width: 8em;
+  height: 2.4em;
+  border-radius: 15px;
+  border: none;
+  background-color: rgb(255, 255, 255);
+  color: #004fb0;
+  font-size: 0.9em;
+  margin-top: 11em;
+  margin-left: -37.1em;
+}
+.view-deals:hover {
+  cursor: pointer;
+  background-color: rgba(220, 220, 220, 0.926);
+}
+.gateways {
+  position: absolute;
+  width: 35.4em;
+  height: 15em;
+  border-radius: 12px;
+  margin-top: 15em;
+  margin-left: 48.4em;
+}
+.gateways img {
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+  filter: brightness(50%);
+  background-size: cover;
+  border-radius: 12px;
+}
+.gateways h2 {
+  position: absolute;
+  color: rgb(251, 250, 250);
+  font-weight: 500;
+  width: 10em;
+  margin-top: -7em;
+  margin-left: 1em;
+  font-size: 2em;
+}
+.gateways .gate-text {
+  position: absolute;
+  color: rgb(251, 250, 250);
+  font-weight: 500;
+  width: 10em;
+  margin-top: -6em;
+  margin-left: 1em;
+  font-size: 2em;
+}
+.gateways .para-1 {
+  position: absolute;
+  font-size: 1.1em;
+  color: rgb(253, 251, 251);
+  margin-left: 1.8em;
+  margin-top: -8.2em;
+}
+.gateways .para-2 {
+  position: absolute;
+  font-size: 1.1em;
+  color: rgb(248, 245, 245);
+  margin-left: 1.8em;
+  margin-top: -7em;
+}
+.next-trip {
+  position: absolute;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, sans-serif;
+  font-weight: 400;
+  font-size: 1.8em;
+  margin-left: 5.5em;
+  margin-top: 17.5em;
+}
+.next-trip-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 16em;
+  width: 80.8%;
+  margin-top: 33.3em;
+  margin-left: 9.8em;
+}
+.sunny-beach {
+  width: 17em;
+  height: 15em;
+}
+.sunny-beach:hover {
+  cursor: pointer;
+}
+.sunny-beach img {
+  width: 100%;
+  height: 100%;
+  border-radius: 15px;
+}
+.sunny-beach h4 {
+  position: absolute;
+  margin-top: -1.5em;
+  margin-left: 0.6em;
+  color: white;
+  font-weight: 400;
+  font-size: 1.5em;
+}
+.car-rental {
+  width: 17em;
+  height: 15em;
+}
+.car-rental:hover {
+  cursor: pointer;
+}
+.car-rental img {
+  width: 100%;
+  height: 100%;
+  border-radius: 15px;
+}
+.car-rental h4 {
+  position: absolute;
+  margin-top: -1.5em;
+  margin-left: 0.6em;
+  color: white;
+  font-weight: 400;
+  font-size: 1.5em;
+}
+.member-off {
+  width: 17em;
+  height: 15em;
+}
+.member-off:hover {
+  cursor: pointer;
+}
+.member-off img {
+  width: 100%;
+  height: 100%;
+  border-radius: 15px;
+}
+.member-off h4 {
+  position: absolute;
+  margin-top: -1.5em;
+  margin-left: 0.6em;
+  color: white;
+  font-weight: 400;
+  font-size: 1.5em;
+}
+.vacational-off {
+  width: 17em;
+  height: 15em;
+}
+.vacational-off:hover {
+  cursor: pointer;
+}
+.vacational-off img {
+  width: 100%;
+  height: 100%;
+  border-radius: 15px;
+}
+.vacational-off h4 {
+  position: absolute;
+  margin-top: -1.5em;
+  margin-left: 0.6em;
+  color: white;
+  font-weight: 400;
+  font-size: 1.5em;
+}
+.on-move {
+  position: absolute;
+  font-family: serif;
+  font-size: 2.25rem;
+  font-weight: 300;
+  line-height: 2.5rem;
+  margin-left: 4.3em;
+  margin-top: 2em;
+}
+.track-credit-cancel {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  height: 9em;
+  width: 80.8%;
+  margin-top: 7em;
+  margin-left: 9.8em;
+  gap: 0.75em;
+}
+.change-trip {
+  width: 24em;
+  height: 5.5em;
+  margin-top: -2em;
+  margin-left: 0em;
+  border: 1px solid rgba(92, 90, 90, 0.501);
+  border-radius: 14px;
+}
+.change-trip:hover {
+  cursor: pointer;
+}
+.change-trip .para-1 {
+  position: absolute;
+  margin-top: 0.7em;
+  margin-left: 0.6em;
+  color: rgb(4, 4, 4);
+  font-family: serif;
+  font-weight: 300;
+  font-size: 1.5em;
+}
+.change-trip .para-2 {
+  position: absolute;
+  margin-top: 3.5em;
+  margin-left: 1em;
+  color: rgb(56, 55, 55);
+  font-family: serif;
+  font-weight: 300;
+  font-size: 0.9em;
+}
+.pen-icon {
+  position: absolute;
+  width: 2em;
+  height: 1.2em;
+  margin-top: 0.9em;
+  margin-left: 21.8em;
+}
+.credit-coupon {
+  position: absolute;
+  width: 24em;
+  height: 5.5em;
+  margin-top: -2em;
+  margin-left: 25em;
+  border: 1px solid rgba(92, 90, 90, 0.501);
+  border-radius: 14px;
+}
+.credit-coupon:hover {
+  cursor: pointer;
+}
+.credit-coupon .para-1 {
+  position: absolute;
+  margin-top: 0.7em;
+  margin-left: 0.6em;
+  color: rgb(4, 4, 4);
+  font-family: serif;
+  font-weight: 300;
+  font-size: 1.5em;
+}
+.credit-coupon .para-2 {
+  position: absolute;
+  margin-top: 3.5em;
+  margin-left: 1em;
+  color: rgb(56, 55, 55);
+  font-family: serif;
+  font-weight: 300;
+  font-size: 0.9em;
+}
+.dollar-icon {
+  position: absolute;
+  width: 2em;
+  height: 1.2em;
+  margin-top: 0.9em;
+  margin-left: 21.8em;
+}
+.track-fund {
+  position: absolute;
+  width: 24em;
+  height: 5.5em;
+  margin-top: -2em;
+  margin-left: 50em;
+  border: 1px solid rgba(92, 90, 90, 0.501);
+  border-radius: 14px;
+}
+.track-fund:hover {
+  cursor: pointer;
+}
+.track-fund .para-1 {
+  position: absolute;
+  margin-top: 0.7em;
+  margin-left: 0.6em;
+  color: rgb(4, 4, 4);
+  font-family: serif;
+  font-weight: 300;
+  font-size: 1.5em;
+}
+.track-fund .para-2 {
+  position: absolute;
+  margin-top: 3.5em;
+  margin-left: 1em;
+  color: rgb(56, 55, 55);
+  font-family: serif;
+  font-weight: 300;
+  font-size: 0.9em;
+}
+.wander-wisely {
+  position: absolute;
+  width: 80.8%;
+  height: 17.5em;
+  border: 1px solid rgba(92, 90, 90, 0.385);
+  margin-left: 9.8em;
+  border-radius: 20px;
+}
+.wander-img {
+  width: 33%;
+  height: 100%;
+  border-bottom-left-radius: 20px;
+  border-top-left-radius: 20px;
+}
+.wander-wisely .head-1 {
+  position: absolute;
+  font-family: serif;
+  font-size: 2.25rem;
+  font-weight: 200;
+  margin-left: 11.5em;
+  margin-top: -6.9em;
+}
+.wander-wisely .head-2 {
+  position: absolute;
+  font-family: serif;
+  font-size: 2.25rem;
+  font-weight: 200;
+  margin-left: 11.6em;
+  margin-top: -5.9em;
+}
+.wander-wisely .list-1 {
+  display: flex;
+  justify-items: center;
+  align-content: space-between;
+  flex-direction: column;
+  margin-left: 27em;
+  margin-top: -10em;
+  gap: 10px;
+  color: rgba(0, 0, 0, 0.756);
+}
+.wander-wisely h4 {
+  position: absolute;
+  font-size: 1.1em;
+  margin-left: 23.6em;
+  margin-top: 2.4em;
+}
+.barcode-img {
+  position: absolute;
+  width: 10em;
+  height: 10em;
+  margin-left: 63em;
+  margin-top: -10.6em;
+}
+.next-idea-h2 {
+  position: absolute;
+  font-family: serif;
+  font-size: 2.25rem;
+  font-weight: 300;
+  line-height: 2.5rem;
+  margin-left: 4.3em;
+  margin-top: 10em;
+}
+.destiny-ideas {
+  width: 80%;
+  height: 20em;
+  margin-left: 9.8em;
+  margin-top: 26em;
+}
+.h31-box {
+  position: absolute;
+  width: 33em;
+  height: 2em;
+  margin-left: 0.8em;
+}
+.down1-img {
+  width: 1.4em;
+  height: 1.4em;
+  margin-left: 31em;
+  margin-top: 0.4em;
+}
+.destiny-ideas .h3-1 {
+  position: absolute;
+  font-weight: 300;
+  font-size: 1.5em;
+  margin-left: 0em;
+  margin-top: 0.2em;
+}
+.h32-box {
+  position: absolute;
+  width: 33em;
+  height: 2em;
+  margin-left: 0.8em;
+  margin-top: 5em;
+}
+.down2-img {
+  width: 1.4em;
+  height: 1.4em;
+  margin-left: 31em;
+  margin-top: 0.4em;
+}
+.destiny-ideas .h3-2 {
+  position: absolute;
+  font-weight: 300;
+  font-size: 1.5em;
+  margin-left: 0em;
+  margin-top: -1.3em;
+}
+.h33-box {
+  position: absolute;
+  width: 33em;
+  height: 2em;
+  margin-left: 0.8em;
+  margin-top: 10em;
+}
+.down3-img {
+  width: 1.4em;
+  height: 1.4em;
+  margin-left: 31em;
+  margin-top: 0.4em;
+}
+.destiny-ideas .h3-3 {
+  position: absolute;
+  font-weight: 300;
+  font-size: 1.5em;
+  margin-left: 0em;
+  margin-top: -1.3em;
+}
+.h34-box {
+  position: absolute;
+  width: 68em;
+  height: 2em;
+  margin-left: 0.8em;
+  margin-top: 15em;
+}
+.down4-img {
+  width: 1.4em;
+  height: 1.4em;
+  margin-left: 65.6em;
+  margin-top: 0.4em;
+}
+.destiny-ideas .h3-4 {
+  position: absolute;
+  font-weight: 300;
+  font-size: 1.5em;
+  margin-left: 0em;
+  margin-top: -1.3em;
+}
+.h35-box {
+  position: absolute;
+  width: 33em;
+  height: 2em;
+  margin-left: 35em;
+}
+.down5-img {
+  width: 1.4em;
+  height: 1.4em;
+  margin-left: 31em;
+  margin-top: 0.4em;
+}
+.destiny-ideas .h3-5 {
+  position: absolute;
+  font-weight: 300;
+  font-size: 1.5em;
+  margin-left: 0em;
+  margin-top: -1.3em;
+}
+.h36-box {
+  position: absolute;
+  width: 33em;
+  height: 2em;
+  margin-left: 35em;
+  margin-top: 5em;
+}
+.down6-img {
+  width: 1.4em;
+  height: 1.4em;
+  margin-left: 31em;
+  margin-top: 0.4em;
+}
+.destiny-ideas .h3-6 {
+  position: absolute;
+  font-weight: 300;
+  font-size: 1.5em;
+  margin-left: 0em;
+  margin-top: -1.3em;
+}
+.h31-box:hover {
+  cursor: pointer;
+}
+.h32-box:hover {
+  cursor: pointer;
+}
+.h33-box:hover {
+  cursor: pointer;
+}
+.h34-box:hover {
+  cursor: pointer;
+}
+.h35-box:hover {
+  cursor: pointer;
+}
+.h36-box:hover {
+  cursor: pointer;
+}
+.expedia-img {
+  position: absolute;
+  margin-left: 9.5em;
+}
+.footer {
+  display: flex;
+  justify-items: center;
+  align-content: space-between;
+  flex-direction: column;
+  margin-left: 10em;
+  margin-top: 2em;
+  gap: 10px;
+  width: 80%;
+  height: 25em;
+}
+.company-container {
+  position: absolute;
+  margin-top: 1em;
+  margin-left: 2em;
+  width: 15em;
+  height: 20em;
+}
+.company-container h3 {
+  font-size: 0.875em;
+  font-weight: 500;
+  color: black;
+  margin-left: 0em;
+}
+.company-list {
+  margin-top: 1em;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-direction: column;
+  color: #0d5ab9;
+  font-size: 0.8em;
+  gap: 1.1em;
+}
+.company-list a:hover {
+  cursor: pointer;
+  border-bottom: 1px solid #004fb0d8;
+}
+.explore-foot {
+  position: absolute;
+  margin-top: 1em;
+  margin-left: 20em;
+  width: 15em;
+  height: 20em;
+}
+.explore-foot h3 {
+  font-size: 0.875em;
+  font-weight: 500;
+  color: black;
+  margin-left: 0em;
+}
+.explore-list {
+  margin-top: 1em;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-direction: column;
+  color: #0d5ab9;
+  font-size: 0.8em;
+  gap: 1.1em;
+}
+.explore-foot a:hover {
+  cursor: pointer;
+  border-bottom: 1px solid #004fb0d8;
+}
+.policies-container {
+  position: absolute;
+  margin-top: 1em;
+  margin-left: 40em;
+  width: 15em;
+  height: 20em;
+}
+.policies-container h3 {
+  font-size: 0.875em;
+  font-weight: 500;
+  color: black;
+  margin-left: 0em;
+}
+.policy-list {
+  margin-top: 1em;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-direction: column;
+  color: #0d5ab9;
+  font-size: 0.8em;
+  gap: 1.1em;
+}
+.policies-container a:hover {
+  cursor: pointer;
+  border-bottom: 1px solid #004fb0d8;
+}
+.help-container {
+  position: absolute;
+  margin-top: 1em;
+  margin-left: 55em;
+  width: 15em;
+  height: 20em;
+}
+.help-container h3 {
+  font-size: 0.875em;
+  font-weight: 500;
+  color: black;
+  margin-left: 0em;
+}
+.help-list {
+  margin-top: 1em;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-direction: column;
+  color: #0d5ab9;
+  font-size: 0.8em;
+  gap: 1.1em;
+}
+.help-container a:hover {
+  cursor: pointer;
+  border-bottom: 1px solid #004fb0d8;
+}
+.hr-foot {
+  margin-top: 20em;
+  color: rgba(128, 128, 128, 0.682);
+  background-color: rgba(128, 128, 128, 0.818);
+}
+.footer span {
+  font-size: 0.8em;
+  font-weight: 400;
+  font-family: serif;
+  margin-top: 1em;
+}
